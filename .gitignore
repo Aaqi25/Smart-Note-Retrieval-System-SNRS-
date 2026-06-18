@@ -1,0 +1,18 @@
+# Environments
+.env
+
+# Databases
+*.db
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Uploads
+uploads/
+
+# OS files
+.DS_Store
+Thumbs.db

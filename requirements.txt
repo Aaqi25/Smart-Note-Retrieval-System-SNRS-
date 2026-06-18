@@ -1,0 +1,36 @@
+# ─── Smart Note Retrieval System (SNRS) — Dependencies ────────────────────
+#
+# Install all dependencies with:
+#   pip install -r requirements.txt
+#
+# Note: PaddlePaddle 3.0 (CPU) must be installed BEFORE paddleocr.
+#       Use the official index to get the correct CPU wheel:
+#
+#   pip install paddlepaddle==3.0.0 -i https://www.paddlepaddle.org.cn/packages/stable/cpu/
+#   pip install paddleocr==3.7.0
+#
+#       For GPU support replace paddlepaddle with paddlepaddle-gpu.
+# ────────────────────────────────────────────────────────────────────────────
+
+# UI Framework
+streamlit>=1.35.0
+
+# Image Processing
+opencv-python>=4.9.0.80
+Pillow>=10.3.0
+numpy>=1.26.0
+
+# OCR Engine — PaddleOCR 3.7.0 (PP-OCRv5 server, CPU)
+# Requires PaddlePaddle 3.0 (CPU) — install separately via the command above
+paddlepaddle==3.0.0
+paddleocr==3.7.0
+
+# Gemini Vision API — fallback OCR for difficult handwritten notes
+# Get your API key at: https://aistudio.google.com/apikey
+google-generativeai>=0.8.0
+
+# Environment variable management (.env file support)
+python-dotenv>=1.0.0
+
+# Fuzzy Search
+rapidfuzz>=3.6.1
